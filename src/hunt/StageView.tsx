@@ -27,7 +27,7 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
   const handleAnswer = (answer: boolean) => {
     setAnswered(true);
     if (answer) {
-      setTimeout(() => { }, 500);
+      setTimeout(() => {}, 500);
     }
   };
 
@@ -125,8 +125,8 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            Every clue led you here. Every step brought us closer. Now there's
-            just one question left...
+            You have completed my hunt and already have my entire heart just one
+            question left...
           </motion.p>
 
           <AnimatePresence>
