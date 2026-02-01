@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import React, { useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Heart } from "lucide-react";
 
 const SurpriseReveal: React.FC = () => {
   const [secretUnlocked, setSecretUnlocked] = useState(false);
@@ -21,7 +21,6 @@ const SurpriseReveal: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blush-50 via-lavender-50 to-mint-50 font-poppins overflow-x-hidden flex flex-col items-center justify-center relative py-20 px-4">
-      
       {/* Floating Hearts */}
       {showFloatingHearts && (
         <div className="fixed inset-0 pointer-events-none z-10">
@@ -64,7 +63,8 @@ const SurpriseReveal: React.FC = () => {
           </span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          There's something special waiting for you... Click the heart to discover it! 💕
+          There's something special waiting for you... Click the heart to
+          discover it! 💕
         </p>
       </motion.div>
 
@@ -112,21 +112,34 @@ const SurpriseReveal: React.FC = () => {
                 💕
               </motion.div>
 
-              <h3 className="text-2xl font-bold text-blush-600 mb-2">My Love Letter to You</h3>
-            <p className="text-gray-600 text-sm leading-relaxed text-left whitespace-pre-line">
-  {"My dearest loveliest Vaishali,"}
-  {"\n\nYou have no idea the amount of life that you have breathed into each and every moment of my life ever since I met you. I cherish every single moment that I have spent with you."}
-  {"\n\nYou have been healing every part of me since we've met. I never liked my smile, my hair, my face, my thoughts—but you make me see them so differently. You are the soul that embodies my being, and I truly could not be whole without you."}
-  {"\n\nIn the grand life that we have planned, 6 months does not seem like a lot—but just this much was enough to make me realize the genuine joy that you bring to my life and the love that we share."}
-  {"\n\nI care so deeply about you and love every single part of your being. I don't say this enough."}
-  {"\n\nI LLLOOVVVEEE YOUOUUUU VERRYRYYY MUUCCCHHHHH, YOUU ARE SSSOOO PREECIOUSS MY GOBLIN 🤍✨"}
-  {"\n\n—"}
-  {"\n\n"}
-  <span className="text-xs italic text-gray-500">
-    {"Mere dimaag mai subah se pata nahi ek hi gana kyu chal raha hai:\n“Main god mein rakh loon agar sar, too mujko sula degi kya?”"}
-  </span>
-</p>
-
+              <h3 className="text-2xl font-bold text-blush-600 mb-2">
+                My Love Letter to You
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed text-left whitespace-pre-line">
+                {"My dearest loveliest Vaishali,"}
+                {
+                  "\n\nYou have no idea the amount of life that you have breathed into each and every moment of my life ever since I met you. I cherish every single moment that I have spent with you."
+                }
+                {
+                  "\n\nYou have been healing every part of me since we've met. I never liked my smile, my hair, my face, my thoughts—but you make me see them so differently. You are the soul that embodies my being, and I truly could not be whole without you."
+                }
+                {
+                  "\n\nIn the grand life that we have planned, 6 months does not seem like a lot—but just this much was enough to make me realize the genuine joy that you bring to my life and the love that we share."
+                }
+                {
+                  "\n\nI care so deeply about you and love every single part of your being. I don't say this enough."
+                }
+                {
+                  "\n\nI LLLOOVVVEEE YOUOUUUU VERRYRYYY MUUCCCHHHHH, YOUU ARE SSSOOO PREECIOUSS MY GOBLIN 🤍✨"
+                }
+                {"\n\n—"}
+                {"\n\n"}
+                <span className="text-xs italic text-gray-500">
+                  {
+                    "Mere dimaag mai subah se pata nahi ek hi gana kyu chal raha hai:\n“Main god mein rakh loon agar sar, too mujko sula degi kya?”"
+                  }
+                </span>
+              </p>
             </div>
           </motion.div>
         )}

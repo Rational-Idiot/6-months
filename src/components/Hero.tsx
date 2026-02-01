@@ -1,23 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Heart, Calendar } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Heart, Calendar } from "lucide-react";
 
 const Hero: React.FC = () => {
-  const [timeTogether, setTimeTogether] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [timeTogether, setTimeTogether] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
-  // Day you met
-  const metDate = new Date('2024-12-18T00:00:00'); // Dec 18, 2024
-  const anniversaryDate = new Date('2025-07-18T00:00:00'); // July 18, 2025 (if you need this later)
+  const metDate = new Date("2024-12-18T00:00:00"); // Dec 18, 2024
+  const anniversaryDate = new Date("2025-07-18T00:00:00");
 
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date().getTime();
-      const distance = now - metDate.getTime(); // Time since you met
+      const distance = now - metDate.getTime();
 
       if (distance > 0) {
         setTimeTogether({
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          hours: Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          ),
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((distance % (1000 * 60)) / 1000),
         });
@@ -47,7 +53,7 @@ const Hero: React.FC = () => {
             transition={{
               duration: 4 + i,
               repeat: Infinity,
-              ease: 'easeInOut',
+              ease: "easeInOut",
             }}
           >
             💕
@@ -60,7 +66,7 @@ const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: "easeOut" }}
           className="mb-8"
         >
           <motion.div
@@ -71,7 +77,7 @@ const Hero: React.FC = () => {
             transition={{
               duration: 3,
               repeat: Infinity,
-              ease: 'easeInOut',
+              ease: "easeInOut",
             }}
             className="text-8xl mb-4"
           >
@@ -97,7 +103,8 @@ const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto"
         >
-        Celebrating all of the beautiful time we have spent together, and looking forward to many more adventures ahead!
+          Celebrating all of the beautiful time we have spent together, and
+          looking forward to many more adventures ahead!
         </motion.p>
 
         {/* Time Since Met */}
@@ -109,7 +116,9 @@ const Hero: React.FC = () => {
         >
           <div className="flex items-center justify-center mb-6">
             <Calendar className="text-blush-500 mr-2" size={24} />
-            <h2 className="text-2xl font-semibold text-gray-800">All this time still feels so little</h2>
+            <h2 className="text-2xl font-semibold text-gray-800">
+              All this time still feels so little
+            </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -118,10 +127,10 @@ const Hero: React.FC = () => {
                 key={unit}
                 className="bg-gradient-to-br from-blush-100 to-lavender-100 rounded-2xl p-4"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: 'spring', stiffness: 300 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="text-3xl md:text-4xl font-bold text-blush-600 mb-1">
-                  {value.toString().padStart(2, '0')}
+                  {value.toString().padStart(2, "0")}
                 </div>
                 <div className="text-sm font-medium text-gray-600 capitalize">
                   {unit}
