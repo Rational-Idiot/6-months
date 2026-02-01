@@ -8,47 +8,53 @@ export interface HuntStage {
 }
 
 export const HUNT_STAGES: HuntStage[] = [
+  // Hawa Point
   {
     slug: "7f3a9c",
-    title: "The First Clue",
+    title: "Hawa Hawa Ee Hawa Mujhko Udaalee~~",
     description:
-      "You've found the beginning of a trail meant only for you. Each step is a piece of the story we're writing.",
+      "You Have found the beginning to a mystery, where shall this lead you",
     nextSlug: "bd91e2",
-    nextHint: "Where we first said hello",
+    nextHint: "18th January 2025",
   },
+  // CC3 Terrace
   {
     slug: "bd91e2",
-    title: "Second Step",
+    title: "Forbidden Doors",
     description:
-      "Some paths are meant to be walked in order. You're right where you're supposed to be.",
+      "You found the place where our sould first touched, It's time to go further",
     nextSlug: "k9m2x1",
-    nextHint: "Where ideas come alive",
+    nextHint: "Our Mythical Spot",
   },
+  // Besides Audi
   {
     slug: "k9m2x1",
     title: "Halfway There",
-    description: "The middle of the journey holds its own magic. Keep going.",
+    description: "Do you remember the shadow of the guard spawning behind us",
     nextSlug: "p4n8q7",
-    nextHint: "Where the sky meets the ground",
+    nextHint:
+      "Where i first experienced divinity and you couldn't hold yourself back",
   },
+  // Lohri Bench
   {
     slug: "p4n8q7",
-    title: "Getting Closer",
-    description:
-      "You're doing amazing. Each clue brings you closer to something special.",
+    title: "Utter Magnificence",
+    description: "You have come so far, only a short while remains",
     nextSlug: "r6t3y8",
-    nextHint: "Where memories are made",
+    nextHint: "Jaha Aapne mujhe traumatise kiya tha",
   },
+  // Squash Court
   {
     slug: "r6t3y8",
-    title: "Almost There",
-    description:
-      "One more step before the end of the hunt—and the beginning of something new.",
+    title: "Definetly the best game ever",
+    description: "One more last hint ~",
+    nextHint: "Where we met the last time, you need a long hug",
     nextSlug: "v2w5z0",
   },
+  //LitRoom
   {
     slug: "v2w5z0",
-    title: "The Last Clue",
+    title: "Turn Around My Love",
     description:
       "You've followed every clue. Now come find me—I'll be waiting where this all leads.",
     nextSlug: null,

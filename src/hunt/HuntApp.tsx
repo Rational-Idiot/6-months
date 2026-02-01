@@ -81,9 +81,9 @@ const HuntApp: React.FC = () => {
       setProgress((prev) =>
         prev.status === "ready"
           ? {
-            status: "ready",
-            completedSlugs: [...prev.completedSlugs, currentSlug],
-          }
+              status: "ready",
+              completedSlugs: [...prev.completedSlugs, currentSlug],
+            }
           : prev,
       );
     }
