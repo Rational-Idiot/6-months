@@ -27,7 +27,7 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
   const handleAnswer = (answer: boolean) => {
     setAnswered(true);
     if (answer) {
-      setTimeout(() => {}, 500);
+      setTimeout(() => { }, 500);
     }
   };
 
@@ -116,7 +116,7 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            You Made It! 🎉
+            YOU DID ITTT !!!!
           </motion.h1>
 
           <motion.p
@@ -178,7 +178,7 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
                           }}
                           className="absolute inset-0 bg-gray-400 text-white px-8 py-3.5 rounded-xl text-lg font-semibold shadow-lg hover:bg-gray-500 transition-colors w-full"
                         >
-                          No 😢
+                          No 💔
                         </motion.button>
                       )}
                     </AnimatePresence>
@@ -221,7 +221,7 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
                   transition={{ duration: 0.5, repeat: 3 }}
                 >
                   <h2 className="text-4xl sm:text-5xl font-bold text-blush-500 mb-4">
-                    🎉 YES! 🎉
+                    🎉 YYUIIIIIPPPIIIEEEEE! 🎉
                   </h2>
                 </motion.div>
 
@@ -231,7 +231,7 @@ const StageView: React.FC<StageViewProps> = ({ stage }) => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}
                 >
-                  You've made me the happiest! 💝
+                  Dai dai daii daii daiissukkkiiiiii 💞
                 </motion.p>
 
                 <motion.div
